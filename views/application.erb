@@ -20,9 +20,9 @@
   <div class="cont"><a href="index.html"><img src="images/fbc_1.png" alt="myStudio" title="myStudio" class="logo" /></a>
   <!--<div class="cont"><a href="index.html"><img src="images/logo.png" alt="myStudio" title="myStudio" class="logo" /></a>-->
     <div class="navbar">
-      <a href="/" class="sel">Home</a>
-      <a href="/portfolio">Portfolio</a>
-      <a href="/contact">Contact</a>
+      <a href="/" class="<%= request.path_info == "/" ? 'sel':'' %> ">Home</a>
+      <a href="/portfolio" class="<%= request.path_info.include?('portfolio') ? 'sel':'' %> ">Portfolio</a>
+      <a href="/contact" class="<%= request.path_info.include?('contact') ? 'sel':'' %> ">Contact</a>
     </div>
   </div>
 </div>

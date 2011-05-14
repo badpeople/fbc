@@ -13,7 +13,11 @@ class MyApp < Sinatra::Base
   get '/contact' do
     @title = 'Contact'
     erb :contact,:layout=>:application
+  end
 
+  get '/portfolio' do
+    @title = 'Portfolio'
+    erb :portfolio,:layout=>:application
   end
 
 end
