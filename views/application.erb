@@ -1,0 +1,75 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><%= "Fine Blade Carpentry > #{@title.nil? ? @title : 'Home'}" %> </title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" title="red" />
+<link href="css/photos.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery.js">
+</script>
+<script type="text/javascript" src="js/slider.js">
+</script>
+<script type="text/javascript" src="js/photos.js">
+</script>
+</head>
+<body>
+<!-- Start Header -->
+<div class="header">
+  <div class="cont"><a href="index.html"><img src="images/fbc_1.png" alt="myStudio" title="myStudio" class="logo" /></a>
+  <!--<div class="cont"><a href="index.html"><img src="images/logo.png" alt="myStudio" title="myStudio" class="logo" /></a>-->
+    <div class="navbar">
+      <a href="/" class="sel">Home</a>
+      <a href="/portfolio">Portfolio</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </div>
+</div>
+<!-- End Header -->
+ <%= yield %>
+<!-- End Container -->
+<!-- Start Footer -->
+<div class="footer">
+  <div class="cont">
+    <ul class="col">
+      <li class="col220">
+        <h3>About us</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pretium ornare neque non dictum. Fusce ut turpis neque. Aenean eleifend lacinia faucibus.</p>
+      </li>
+      <li class="col220">
+        <h3>Archive</h3>
+        <ul>
+          <li><a href="blog.html">May 2011</a></li>
+          <li><a href="blog.html">April 2011</a></li>
+        </ul>
+      </li>
+      <li class="col220">
+        <h3>Categories</h3>
+        <ul>
+          <li><a href="blog.html">Lorem ipsum</a></li>
+          <li><a href="blog.html">Euismod tincidunt</a></li>
+          <li><a href="blog.html">Consectetuer adipiscing</a></li>
+          <li><a href="blog.html">Erat volutpat</a></li>
+          <li><a href="blog.html">Diam nonummy</a></li>
+        </ul>
+      </li>
+      <li class="col220">
+        <h3>Social</h3>
+        <ul class="social">
+          <li><a href="#"><img src="icons/ico_facebook.png" alt="Facebook" title="Facebook" /></a></li>
+          <li><a href="#"><img src="icons/ico_twitter.png" alt="Twitter" title="Twitter" /></a></li>
+          <li><a href="#"><img src="icons/ico_myspace.png" alt="MySpace" title="MySpace" /></a></li>
+          <li><a href="#"><img src="icons/ico_wordpress.png" alt="WordPress" title="WordPress" /></a></li>
+          <li><a href="#"><img src="icons/ico_rss.png" alt="RSS" title="RSS" /></a></li>
+        </ul>
+      </li>
+    </ul>
+    <div class="clear"></div>
+    <div class="hr_black"></div>
+    <p>2011 &copy; <a href="index.html">myStudio</a> All Rights Reserved</p>
+  </div>
+</div>
+<!-- End Footer -->
+</body>
+</html>
